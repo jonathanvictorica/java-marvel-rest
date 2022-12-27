@@ -1,0 +1,23 @@
+server:
+  port: 80
+  servlet:
+    context-path: /marvel
+spring:
+  data:
+    mongodb:
+      host: localhost
+      port: 27017
+      database: marvel
+      username: usr_marvel
+      password: pwd_marvel
+  application:
+    name: api-marvel
+
+com:
+  jmg:
+    marvel:
+      keyPrivate: 53c965ab2676797d7cbdcf8da9d5ab4d7b6117e1
+      keyPublic: 720abe612804b7324dc73841c08bc9a5
+      host: https://gateway.marvel.com
+      endpointGetCharacters: /v1/public/characters
+      endpointGetComicByCharacterId: /v1/public/characters/:param/comics
